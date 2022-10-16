@@ -1,23 +1,24 @@
 ***Yii2 Asignment README***
 
 **Coder**
+
 - Name: Francis Nicholls
 
 **Requirements**
+
 - Windows: XAMPP
 - Linux: PHP 8.1 + Apache Server + MySQL + phpmyadmin
 
 **Technologies/Plugins**
+
 - Yii2 framework / Owl carousel widget
 
 **How to use**
+
 - Open the project folder 'yii2_musterfirma' with VS Code or another editor. 
-
 - Open a terminal and navigate to the project folder.
-
+- Add to XAMPP or Apache 'htdocs' folder and start the apache server
 - Enter 'php  yii migrate/fresh' to seed the database.
-
-- Add to XAMPP htdocs and start the apache server
 
 **Features**
 
