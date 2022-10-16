@@ -1,0 +1,332 @@
+#w1, #w3{
+    background-color: #f5f5f5;
+}
+
+.footer {
+    background-color: #f5f5f5;
+    font-size: .9em;
+}
+
+.footer > .container, .footer > .container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.not-set {
+    color: #c55;
+    font-style: italic;
+}
+
+/* add sorting icons to gridview sort links */
+a.asc:after, a.desc:after {
+    content: '';
+    left: 3px;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border: solid 5px transparent;
+    margin: 4px 4px 2px 4px;
+    background: transparent;
+}
+
+a.asc:after {
+    border-bottom: solid 7px #212529;
+    border-top-width: 0;
+}
+
+a.desc:after {
+    border-top: solid 7px #212529;
+    border-bottom-width: 0;
+}
+
+.grid-view th,
+.grid-view td:last-child {
+    white-space: nowrap;
+}
+
+.grid-view .filters input,
+.grid-view .filters select {
+    min-width: 50px;
+}
+
+.hint-block {
+    display: block;
+    margin-top: 5px;
+    color: #999;
+}
+
+.error-summary {
+    color: #a94442;
+    background: #fdf7f7;
+    border-left: 3px solid #eed3d7;
+    padding: 10px 20px;
+    margin: 0 0 15px 0;
+}
+
+/* align the logout "link" (button in form) of the navbar */
+.navbar form > button.logout {
+    padding-top: 7px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+@media(max-width:767px) {
+    .navbar form > button.logout {
+        display:block;
+        text-align: right;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    #w4 {
+        gap:35px;
+    }
+   
+}
+
+@media(max-width:1100px) {
+    
+    .col-lg-5{
+
+        display: flex;
+    justify-content: center;
+    padding-bottom: 10%;
+    }
+}
+
+.navbar form > button.logout:focus,
+.navbar form > button.logout:hover {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.navbar-brand{
+    padding-left: 2%;
+}
+.navbar form > button.logout:focus {
+    outline: none;
+}
+
+/* style breadcrumb widget as in previous bootstrap versions */
+.breadcrumb {
+    background-color: var(--bs-gray-200);
+    border-radius: .25rem;
+    padding: .75rem 1rem;
+}
+
+.breadcrumb-item > a
+{
+    text-decoration: none;
+}
+
+/*Navigation*/
+.nav-item a{
+    color: #212529;
+    font-family: Helvetica;
+    font-weight: bolder;
+}
+
+.nav-item .active {
+    color: #fdd547
+}
+
+#w2 #btn-lang1 {
+    background-color: rgba(0, 0, 255, 0.10);
+    border-radius: 25px;
+    padding: 0px 10px;
+  }
+
+#w2 #btn-lang2, #w2 #btn-lang3 {
+background-color: transparent;
+border-radius: 25px;
+padding: 0px 7px;
+}
+
+#w1 .container {
+display: flex;
+justify-content: flex-end;
+padding: 0;
+margin: 0;
+}  
+
+
+#w2 {
+    gap:9px;
+}
+
+#w2 button {
+    border: none;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+#w4 {
+    gap:0px;
+    font-size: 1.1vw;
+}
+
+body{
+    background-color: rgb(247, 243, 242);
+    margin-bottom: 15%;
+    margin-right: 22%;
+    padding-left: 8%;
+    padding-top: 2%;
+}
+
+.main-content{
+    background-color: white;
+    border-radius: 25px;
+}
+
+.body-content .row{
+    padding-left: 3%;
+} 
+.col-lg-5 img{
+   /* width: 300px; */
+    /*height: 180px; */
+    width: 25vw;
+    height: 15vw;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.row h1{
+    font-size: 1vw;
+    padding-top: 3%;
+    padding-bottom: 1%;
+}
+.navbar-brand {
+    font-weight: bolder;
+    font-size: 1.3vw;
+    
+}
+
+.col p{
+    line-height: 0.5;
+}
+
+.footer {
+    height: 180px;
+    padding-top: 3%;
+}
+
+h6{
+    font-weight: bold;
+    padding-bottom: 10%;
+    color: black;
+}
+
+.col-lg-7 {
+    font-size: 1vw;
+    color: #949090;
+    opacity: 0.85;
+    padding-top: 2%;
+    padding-bottom: 10%;
+
+}
+
+.footer .container{
+    padding-left: 3%;
+}
+
+.owl-carousel{
+padding: 0;
+margin: 0;
+}
+
+.container, .container-fluid, .container-xxl, .container-xl, .container-lg, .container-md, .container-sm{
+    --bs-gutter-x: 0rem;
+}
+
+#w4{
+    margin-left: 5%;
+}
+
+.owl-carousel{
+    background-color: #fde747
+}
+
+.owl-nav{
+    bottom: 120px;
+    position: relative;
+    margin-left: -3.9vw;
+    margin-right: -3.9vw;
+}
+
+.owl-carousel .owl-nav button.owl-next {
+    width: 50px;
+    height: 28px;
+    background: rgb(210,210,210);
+    background: linear-gradient(90deg, rgba(210,210,210,1) 0%, rgba(202, 190, 151, 0.8) 35%, rgba(139, 91, 69, 0.1) 100%);
+    border-top-left-radius: 110px;
+    border-top-right-radius: 110px;
+    border-bottom: 0;
+    bottom: 140px;
+    z-index: 100;
+    transform: rotate(-90deg);
+    float: inline-end;
+    opacity: 100%;
+    
+}
+
+
+.owl-carousel .owl-nav button.owl-prev {
+    width: 50px;
+    height: 28px;
+    background: rgb(210,210,210);
+background: linear-gradient(90deg, rgba(210,210,210,1) 0%, rgba(208,208,208,1) 35%, rgba(154,154,154,1) 100%);
+    border-top-left-radius: 110px; 
+    border-top-right-radius: 110px; 
+    border-bottom: 0;
+    z-index: 100;
+    transform: rotate(90deg);
+}
+
+
+.owl-carousel .owl-nav button.owl-next span, .owl-carousel .owl-nav button.owl-prev span, .owl-carousel button.owl-dot span{
+    display: none;
+}
+
+.owl-carousel .owl-nav button.owl-next::after {
+    position: relative;
+    content: '▼';
+    color: white;
+  }
+
+  .owl-carousel .owl-nav button.owl-prev::after {
+    position: relative;
+    content: '▼';
+    color: white;
+  }
+
+  .nav-item .active{
+    color: #fdd547
+}
+
+.vehicle{
+    position: absolute;
+    bottom: -87%;
+    right: 0%;  
+    display: none;
+    z-index: 300;
+}
+
+.drive{
+    animation: forwards;
+    animation-name: run;
+    animation-duration: 2s;
+
+}
+
+@keyframes run {
+    0% {
+      right: 0;
+    }
+    50% {
+      right: 50%;
+    }
+    100% {
+      right: 0%;   
+    }
+  }
+
