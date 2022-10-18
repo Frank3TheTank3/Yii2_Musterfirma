@@ -40,9 +40,10 @@ AppAsset::register($this);
                         <?= Alert::widget() ?>
                         <!-- CONTENT INDEX -->
                         <?= $content ?>
+                       
                 </main>
                 <!-- FOOTER -->
-                <?php echo \Yii::$app->view->renderFile('@app/views/site/footer.php'); ?>
+               
                 <?php $this->endBody() ?>
             </div>
         </body>

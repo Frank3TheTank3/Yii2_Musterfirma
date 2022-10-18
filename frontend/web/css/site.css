@@ -144,7 +144,21 @@ a.desc:after {
 /*////////////*/
 /*   Mobile   */
 /*////////////*/
-
+@media(max-width:550px) {
+    .maincontent-left img{
+        /*width: 25vw;
+        height: 15vw;*/
+        height: 180px;
+        width: 220px;
+        padding-left: 25px;
+        padding-bottom: 55px;
+        
+    }
+    footer{
+        height: auto;
+        padding-bottom: 0;
+    }
+}
 @media(max-width:950px) {
     .navbar form > button.logout {
         display:block;
@@ -194,21 +208,27 @@ a.desc:after {
       
     }
 
-    footer{
-        padding-bottom: 100%;
-    }
 
-    .body-content .row, .site-contact, .site-about{
+    body .body-content .row, .site-contact, .site-about{
         padding-left: 50px;
-        margin-right: 150px;
+        margin-right: 5px;
+    }
+    .maincontent-left img{
+        /*width: 25vw;
+        height: 15vw;*/
+        height: 180px;
+        width: 220px;
+        padding-left: 25px;
+        padding-bottom: 55px;
+        
     }
 }
 
 @media(max-width:1200px) {
    
     .main-content{
-        width: 100vw;
-    min-width: 100px;
+        width: 70vw;
+    min-width: 50px;
     }
 }
 
@@ -351,14 +371,14 @@ header, footer{
     border-radius: 15px;
 }
 @media(min-width:950px) {
-.main-content{
-    background-color: #FEFEFF;
-    border-radius: 25px;
-    max-width: 1008px;
-    min-width: 940px;
-    font-family: Arial, Helvetica, sans-serif;
-    padding-bottom: 20px;
-}
+    .main-content{
+        background-color: #FEFEFF;
+        border-radius: 25px;
+        max-width: 1008px;
+        min-width: 940px;
+        font-family: Arial, Helvetica, sans-serif;
+        padding-bottom: 20px;
+    }
 }
 .body-content .row, .site-contact, .site-about{
     padding-left: 55px;
@@ -382,15 +402,16 @@ hr{
 /*/////////////*/
 /* Index Image */
 /*/////////////*/
-
-.maincontent-left img{
-    /*width: 25vw;
-    height: 15vw;*/
-    padding-right: 7px;
-    margin-top: 20px;
-    height: 188px;
-    width: 320px;
-    
+@media(min-width:950px) {
+    .maincontent-left img{
+        /*width: 25vw;
+        height: 15vw;*/
+        padding-right: 7px;
+        margin-top: 20px;
+        height: 188px;
+        width: 320px;
+        
+    }
 }
 
 /*//////////////*/
@@ -546,11 +567,12 @@ margin-bottom: 0;
     padding-left: 15px;
 }
 
+@media(min-width:950px) {
 .footer {
     height: 180px;
     padding-top: 3%;
 }
-
+}
 .not-set {
     color: #c55;
     font-style: italic;

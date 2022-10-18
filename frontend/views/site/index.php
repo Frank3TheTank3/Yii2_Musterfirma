@@ -38,3 +38,4 @@ $this->title = 'Home';
 </div>
 </div>
 <?php echo \Yii::$app->view->renderFile('@app/views/site/carousel.php'); ?>
+<?php echo \Yii::$app->view->renderFile('@app/views/site/footer.php'); ?>
