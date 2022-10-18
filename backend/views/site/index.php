@@ -1,51 +1,59 @@
 <?php
-
+  use yii\bootstrap5\Html;
 /** @var yii\web\View $this */
 
-$this->title = 'My Yii Application';
+$this->title = 'Example Backend Database';
 ?>
 <div class="site-index">
 
     <div class="jumbotron text-center bg-transparent">
-        <h1 class="display-4">Congratulations!</h1>
+        <h2 class="display-4 mb-5 mt-5">'The Muster Construction Website' Database</h2>
 
-        <p class="lead">You have successfully created your Yii-powered application.</p>
-
-        <p><a class="btn btn-lg btn-success" href="http://www.yiiframework.com">Get started with Yii</a></p>
+       
     </div>
 
     <div class="body-content">
 
         <div class="row">
             <div class="col-lg-4">
-                <h2>Heading</h2>
+                <h2>Add new languages</h2>
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
+                <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt" might sound 
+                    like a cool language but didn't you ever want to exchange it for something else? Well as an administrator
+                    you have the super user rights to do so!
+                </p>
 
-                <p><a class="btn btn-outline-secondary" href="http://www.yiiframework.com/doc/">Yii Documentation &raquo;</a></p>
+                    <?php 
+                  
+                    echo Html::tag('div',Html::a('Add a new language to the database',['/backend-languages/index'],
+                    ['class' => ['btn btn-link login text-decoration-none']]),['class' => ['d-flex']]); ?>
+
+            </div>
+            
+            <div class="col-lg-4">
+                <h2>Add new navigation</h2>
+
+                <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt" might sound 
+                    like a cool language but didn't you ever want to exchange it for something else? Well as an administrator
+                    you have the super user rights to do so!
+                </p>
+
+                    <?php 
+                    echo Html::tag('div',Html::a('Add a new language to the database',['/backend-navigation/index'],
+                    ['class' => ['btn btn-link login text-decoration-none']]),['class' => ['d-flex']]); ?>
+
             </div>
             <div class="col-lg-4">
-                <h2>Heading</h2>
+                <h2>Add new carousel images</h2>
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
+                <p>Add cat images. Cats are construction cranes capabable of lifting many tons of dirt. Add pictures
+                    of holes or pictures of filled up holes. The possibilities are endless.
+                </p>
 
-                <p><a class="btn btn-outline-secondary" href="http://www.yiiframework.com/forum/">Yii Forum &raquo;</a></p>
-            </div>
-            <div class="col-lg-4">
-                <h2>Heading</h2>
+                    <?php 
+                    echo Html::tag('div',Html::a('Add a new language to the database',['/backend-carousel/index'],
+                    ['class' => ['btn btn-link login text-decoration-none']]),['class' => ['d-flex']]); ?>
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-outline-secondary" href="http://www.yiiframework.com/extensions/">Yii Extensions &raquo;</a></p>
             </div>
         </div>
 
