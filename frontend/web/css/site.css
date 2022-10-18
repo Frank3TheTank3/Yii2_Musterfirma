@@ -2,21 +2,23 @@
 /*  NAV BARS  */
 /*////////////*/
 
-#w1, #w3{
-    background-color: #f5f5f5;
+#w2 button {
+    border: none;
+    font-size: 12px;
+    font-weight: 700;
 }
 
 #w2 {
     gap:9px;
 }
 
-#w2 #btn-lang1 {
+#btn-lang1 {
     background-color: #E8EFF6;
     border-radius: 25px;
     padding: 0px 10px;
   }
 
-#w2 #btn-lang2, #w2 #btn-lang3 {
+#btn-lang2, #btn-lang3 {
     background-color: transparent;
     border-radius: 25px;
     padding: 0px 7px;
@@ -119,6 +121,7 @@ a.desc:after {
     background-color: var(--bs-gray-200);
     border-radius: .25rem;
     padding: .75rem 1rem;
+    background: #ffffff;
 }
 
 .breadcrumb-item > a
@@ -142,7 +145,7 @@ a.desc:after {
 /*   Mobile   */
 /*////////////*/
 
-@media(max-width:767px) {
+@media(max-width:950px) {
     .navbar form > button.logout {
         display:block;
         text-align: right;
@@ -160,25 +163,52 @@ a.desc:after {
         padding-left: -100px;
         margin-right: -6.8vw;
     }
-    .col-lg-5 img{
-        display: flex;
-        justify-self: center;
-        width: 320px;
-        height: 500px;
-       
-    }
-
-    .navbar-brand {
-        font-size: 8px;  
-    }
-    
-    .body{
-        width: 100%;
-    }
-
     /* Body p text */
-    .col-lg-7 {
-        font-size: 9px;
+    .maincontent-right {
+        font-size: 16px;
+    }
+       /* h1 body title */
+       .row h1{
+        font-size: 14px;
+        padding-top: 60px;
+        padding-bottom: 30px;
+
+    }
+     /* Navbar pages */
+     .navbarmenuitems {
+        gap:0px;
+                                /*font-size: 1.4vw;*/
+        font-size: 12px;
+    }
+    .nav-link{
+        margin: 0;
+        padding: 0;
+    }
+    .main-content{
+        background-color: #FEFEFF;
+        border-radius: 25px;
+        max-width: 1008px;
+        min-width: 100px;
+        font-family: Arial, Helvetica, sans-serif;
+        padding-bottom: 20px;
+      
+    }
+
+    footer{
+        padding-bottom: 100%;
+    }
+
+    .body-content .row, .site-contact, .site-about{
+        padding-left: 50px;
+        margin-right: 150px;
+    }
+}
+
+@media(max-width:1200px) {
+   
+    .main-content{
+        width: 100vw;
+    min-width: 100px;
     }
 }
 
@@ -204,81 +234,90 @@ a.desc:after {
     
 }
 
-/*////////////*/
-/* FONT SIZES */
-/*////////////*/
 
-/* Title */
-.navbar-brand {
-    font-weight: bolder;
-    /*font-size: 18px;*/
-    font-size: 26px;
-    padding-bottom: 20px;
-    padding-left: 48px;
-    font-family: 'HelveticaNw', sans-serif;
-    
+/*//////////////////////*/
+/* FONT STYLING & SIZES */
+/*//////////////////////*/
+@media(min-width:950px) {
+    /* Title */
+    .navbar-brand {
+        font-weight: bolder;
+        /*font-size: 18px;*/
+        font-size: 26px;
+        padding-bottom: 20px;
+        padding-left: 34px;
+        font-family: 'HelveticaNw', sans-serif;
+        
+    }
+
+
+    /* Navbar language */
+    #w2 button {
+        border: none;
+        font-size: 12px;
+        font-weight: 700;
+    }
+
+    /* Navbar pages */
+    .navbarmenuitems {
+        gap:0px;
+                                /*font-size: 1.4vw;*/
+        font-size: 16px;
+    }
+    /* h1 body title */
+    .row h1{
+        font-size: 16px;
+        padding-top: 60px;
+        padding-bottom: 1%;
+
+    }
+    /* Body p text */
+    .maincontent-right {
+        font-size: 15px;
+                                        /*font-size: 1.2vw;*/
+        color: #B6B6B6;
+        opacity: 0.8;
+        padding-top: 2%;
+        padding-bottom: 80px;
+        padding-right: 0;
+        margin-right: 0;
+    }
+
+    .maincontent-left {
+
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    /* Footer h6 subtitle text */
+    h6{
+        font-weight: bold;
+        padding-bottom: 10%;
+        color: black;
+                                        /*font-size: .9vw;*/
+        font-size: 14px;
+    }
+
+
+
+    /* h1 body text */
+    .col p{
+        line-height: 0.5;
+                                        /*font-size: 1vw;*/
+        font-size: 15px;
+    }
+
+    .owl-item p{
+        font-size: 12px;
+    }
+
+
+    .item-class{
+        font-size: 1vw;
+        align-items: center;
+        justify-content: center;
+    }
 }
-
-
-/* Navbar language */
-#w2 button {
-    border: none;
-    font-size: 12px;
-    font-weight: 700;
-}
-
-/* Navbar pages */
-.navbarmenuitems {
-    gap:0px;
-                            /*font-size: 1.4vw;*/
-    font-size: 16px;
-}
-/* h1 body title */
-.row h1{
-    font-size: 16px;
-    padding-top: 60px;
-    padding-bottom: 1%;
-
-}
-/* Body p text */
-.col-lg-7 {
-    font-size: 15px;
-                                     /*font-size: 1.2vw;*/
-    color: #B6B6B6;
-    opacity: 0.8;
-    padding-top: 2%;
-    padding-bottom: 80px;
-}
-
-/* Footer h6 subtitle text */
-h6{
-    font-weight: bold;
-    padding-bottom: 10%;
-    color: black;
-                                    /*font-size: .9vw;*/
-    font-size: 14px;
-}
-
-
-
-/* h1 body text */
-.col p{
-    line-height: 0.5;
-                                    /*font-size: 1vw;*/
-    font-size: 15px;
-}
-
-.owl-item p{
-    font-size: 12px;
-}
-
-
-.item-class{
-    font-size: 1vw;
-    align-items: center;
-    justify-content: center;
-}
-
 
 /*////////////*/
 /*    Body    */
@@ -311,16 +350,17 @@ header, footer{
     border: 13px solid #ffffff;
     border-radius: 15px;
 }
-
+@media(min-width:950px) {
 .main-content{
-    background-color: white;
+    background-color: #FEFEFF;
     border-radius: 25px;
     max-width: 1008px;
-    min-width: 850px;
+    min-width: 940px;
     font-family: Arial, Helvetica, sans-serif;
-
+    padding-bottom: 20px;
 }
-.body-content .row{
+}
+.body-content .row, .site-contact, .site-about{
     padding-left: 55px;
 } 
 
@@ -343,15 +383,13 @@ hr{
 /* Index Image */
 /*/////////////*/
 
-.col-lg-5 img{
+.maincontent-left img{
     /*width: 25vw;
     height: 15vw;*/
-    padding-right: 10px;
+    padding-right: 7px;
     margin-top: 20px;
     height: 188px;
     width: 320px;
-    display: flex;
-    justify-content: center;
     
 }
 
@@ -437,6 +475,9 @@ color: white;
     height: 217px;
 } 
 
+.item-class div p{
+margin-bottom: 0;
+}
 /*//////////////////////////////*/
 /*  Carousel Vehicle Animation  */
 /*/////////////////////////////*/

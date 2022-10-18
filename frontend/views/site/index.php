@@ -8,7 +8,7 @@ $this->title = 'Home';
         <div class="row">
             <!-- HEADER 1 TITEL-->
             <h1 class="fw-bold">Dies ist die Titelschrift!</h1>
-            <div class="col-lg-7">
+            <div class="col-lg-8 maincontent-right">
                 <!-- MAIN TEXT -->
                 <?php
                 //Get complete language text
@@ -27,9 +27,9 @@ $this->title = 'Home';
                 }
                 ?>
             </div>
-            <div class="col-lg-5">
+            <div class="col-lg-4 maincontent-left">
                 <!-- TRUCK IMAGE -->
-                <?php echo Html::img('@web/images/truck.png', ['alt' => 'pic not found', 'width' => '270px', 'height' => '200px', 'class' => 'me-3']) ?>
+                <?php echo Html::img('@web/images/truck.png', ['alt' => 'pic not found', 'width' => '270px', 'height' => '200px', 'class' => 'float-end me-3']) ?>
             </div>
         </div>
     
