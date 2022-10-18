@@ -1,21 +1,60 @@
+/*////////////*/
+/*  NAV BARS  */
+/*////////////*/
+
 #w1, #w3{
     background-color: #f5f5f5;
 }
 
-.footer {
-    background-color: #f5f5f5;
-    font-size: .9em;
+#w2 {
+    gap:9px;
 }
 
-.footer > .container, .footer > .container-fluid {
-    padding-right: 15px;
-    padding-left: 15px;
+#w2 #btn-lang1 {
+    background-color: rgba(0, 0, 255, 0.10);
+    border-radius: 25px;
+    padding: 0px 10px;
+  }
+
+#w2 #btn-lang2, #w2 #btn-lang3 {
+    background-color: transparent;
+    border-radius: 25px;
+    padding: 0px 7px;
 }
 
-.not-set {
-    color: #c55;
-    font-style: italic;
+#w1 .container {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0;
+    margin: 0;
+}  
+
+.navbar form > button.logout {
+    padding-top: 7px;
+    color: rgba(255, 255, 255, 0.5);
 }
+
+.navbar form > button.logout:focus,
+.navbar form > button.logout:hover {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.navbar-brand{
+    padding-left: 2%;
+}
+.navbar form > button.logout:focus {
+    outline: none;
+}
+
+.nav-item .active{
+    color: #fdd547
+}
+
+
+/*////////////*/
+/*    Links   */
+/*////////////*/
 
 /* add sorting icons to gridview sort links */
 a.asc:after, a.desc:after {
@@ -39,6 +78,10 @@ a.desc:after {
     border-bottom-width: 0;
 }
 
+/*////////////*/
+/*    Grids   */
+/*////////////*/
+
 .grid-view th,
 .grid-view td:last-child {
     white-space: nowrap;
@@ -48,6 +91,10 @@ a.desc:after {
 .grid-view .filters select {
     min-width: 50px;
 }
+
+/*////////////////*/
+/* Hints / Errors */
+/*////////////////*/
 
 .hint-block {
     display: block;
@@ -63,48 +110,9 @@ a.desc:after {
     margin: 0 0 15px 0;
 }
 
-/* align the logout "link" (button in form) of the navbar */
-.navbar form > button.logout {
-    padding-top: 7px;
-    color: rgba(255, 255, 255, 0.5);
-}
-
-@media(max-width:767px) {
-    .navbar form > button.logout {
-        display:block;
-        text-align: right;
-        width: 100%;
-        padding: 10px 0;
-    }
-
-    #w4 {
-        gap:35px;
-    }
-   
-}
-
-@media(max-width:1100px) {
-    
-    .col-lg-5{
-
-        display: flex;
-    justify-content: center;
-    padding-bottom: 10%;
-    }
-}
-
-.navbar form > button.logout:focus,
-.navbar form > button.logout:hover {
-    text-decoration: none;
-    color: rgba(255, 255, 255, 0.75);
-}
-
-.navbar-brand{
-    padding-left: 2%;
-}
-.navbar form > button.logout:focus {
-    outline: none;
-}
+/*///////////////*/
+/*  Breadcrumbs  */
+/*///////////////*/
 
 /* style breadcrumb widget as in previous bootstrap versions */
 .breadcrumb {
@@ -121,113 +129,224 @@ a.desc:after {
 /*Navigation*/
 .nav-item a{
     color: #212529;
-    font-family: Helvetica;
+                                                        /*font-family: Helvetica;*/
     font-weight: bolder;
 }
 
 .nav-item .active {
-    color: #fdd547
+    color: #FCD048;
 }
 
-#w2 #btn-lang1 {
-    background-color: rgba(0, 0, 255, 0.10);
-    border-radius: 25px;
-    padding: 0px 10px;
-  }
 
-#w2 #btn-lang2, #w2 #btn-lang3 {
-background-color: transparent;
-border-radius: 25px;
-padding: 0px 7px;
+/*////////////*/
+/*   Mobile   */
+/*////////////*/
+
+@media(max-width:767px) {
+    .navbar form > button.logout {
+        display:block;
+        text-align: right;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    #w4 {
+        gap:35px;
+    }
+    .owl-nav{
+        bottom: 10vh;
+        position: relative;
+        margin-left: -100px;
+        padding-left: -100px;
+        margin-right: -6.8vw;
+    }
 }
 
-#w1 .container {
-display: flex;
-justify-content: flex-end;
-padding: 0;
-margin: 0;
-}  
-
-
-#w2 {
-    gap:9px;
+@media(max-width:1100px) {
+    
+    .col-lg-5 img{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 2%;
+        margin-left: 150px;
+    }
+    
+}
+@media(max-width:500px) {
+    
+    .owl-next{
+        display: flex;
+    }
+    .owl-prev{
+        display: flex;
+    }
+     
+}
+@media(max-width:1000px) {
+    
+    .owl-next{
+        display: none;
+    }
+    .owl-prev{
+        display: none;
+    }
+    
 }
 
+/*////////////*/
+/* FONT SIZES */
+/*////////////*/
+
+/* Title */
+.navbar-brand {
+    font-weight: bolder;
+    /*font-size: 18px;*/
+    font-size: 26px;
+    padding-bottom: 20px;
+    padding-left: 48px;
+    font-family: 'HelveticaNw', sans-serif;
+    
+}
+
+
+/* Navbar language */
 #w2 button {
     border: none;
     font-size: 12px;
     font-weight: 700;
 }
 
-#w4 {
+/* Navbar pages */
+.navbarmenuitems {
     gap:0px;
-    font-size: 1.1vw;
+                            /*font-size: 1.4vw;*/
+    font-size: 16px;
+}
+/* h1 body title */
+.row h1{
+    font-size: 16px;
+    padding-top: 60px;
+    padding-bottom: 1%;
+
+}
+/* Body p text */
+.col-lg-7 {
+    font-size: 15px;
+                                     /*font-size: 1.2vw;*/
+    color: #B6B6B6;
+    opacity: 0.8;
+    padding-top: 2%;
+    padding-bottom: 80px;
+}
+
+/* Footer h6 subtitle text */
+h6{
+    font-weight: bold;
+    padding-bottom: 10%;
+    color: black;
+                                    /*font-size: .9vw;*/
+    font-size: 14px;
+}
+
+
+
+/* h1 body text */
+.col p{
+    line-height: 0.5;
+                                    /*font-size: 1vw;*/
+    font-size: 15px;
+}
+
+.owl-item p{
+    font-size: 12px;
+}
+
+
+.item-class{
+    font-size: 1vw;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*////////////*/
+/*    Body    */
+/*////////////*/
+
+        
+#w1{
+    margin: 0;
+    padding-bottom: 0;
+    padding-top: 5px;
+}
+
+#w3{
+    margin: 0;
+    padding: 0;
 }
 
 body{
-    background-color: rgb(247, 243, 242);
-    margin-bottom: 15%;
+    background-color: #E7E9EE;
+    margin-bottom: 90px;
     margin-right: 22%;
-    padding-left: 8%;
-    padding-top: 2%;
+    /*padding-left: 8%;
+    padding-top: 2%;*/
+    padding-top: 35px;
+    padding-left: 55px;
+    padding-right: auto;
+}
+
+header, footer{
+    border: 13px solid #ffffff;
+    border-radius: 15px;
 }
 
 .main-content{
     background-color: white;
     border-radius: 25px;
+    max-width: 1008px;
+    min-width: 850px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.body-content .row{
+    padding-left: 55px;
+} 
+
+
+.footer {
+    background-color: #f5f5f5;
+    padding-left: 40px;
 }
 
-.body-content .row{
-    padding-left: 3%;
-} 
+hr{
+    margin: 0;
+    height:10px;
+    border:none;
+    color:#FDD648;
+    background-color:#FDD648;
+    opacity:1;
+}
+
+/*/////////////*/
+/* Index Image */
+/*/////////////*/
+
 .col-lg-5 img{
-   /* width: 300px; */
-    /*height: 180px; */
-    width: 25vw;
-    height: 15vw;
+    /*width: 25vw;
+    height: 15vw;*/
+    padding-right: 10px;
+    margin-top: 20px;
+    height: 188px;
+    width: 320px;
     display: flex;
     justify-content: center;
     
 }
 
-.row h1{
-    font-size: 1vw;
-    padding-top: 3%;
-    padding-bottom: 1%;
-}
-.navbar-brand {
-    font-weight: bolder;
-    font-size: 1.3vw;
-    
-}
-
-.col p{
-    line-height: 0.5;
-}
-
-.footer {
-    height: 180px;
-    padding-top: 3%;
-}
-
-h6{
-    font-weight: bold;
-    padding-bottom: 10%;
-    color: black;
-}
-
-.col-lg-7 {
-    font-size: 1vw;
-    color: #949090;
-    opacity: 0.85;
-    padding-top: 2%;
-    padding-bottom: 10%;
-
-}
-
-.footer .container{
-    padding-left: 3%;
-}
+/*//////////////*/
+/* Owl Carousel */
+/*//////////////*/
 
 .owl-carousel{
 padding: 0;
@@ -242,15 +361,19 @@ margin: 0;
     margin-left: 5%;
 }
 
+#w1 div{
+    margin-inline-start: auto;
+}
+
 .owl-carousel{
-    background-color: #fde747
+    background-color: #FDD648;
 }
 
 .owl-nav{
-    bottom: 120px;
+    bottom: 110px;
     position: relative;
-    margin-left: -3.9vw;
-    margin-right: -3.9vw;
+    margin-left: -60px;
+    margin-right: -60px;
 }
 
 .owl-carousel .owl-nav button.owl-next {
@@ -269,19 +392,17 @@ margin: 0;
     
 }
 
-
 .owl-carousel .owl-nav button.owl-prev {
     width: 50px;
     height: 28px;
     background: rgb(210,210,210);
-background: linear-gradient(90deg, rgba(210,210,210,1) 0%, rgba(208,208,208,1) 35%, rgba(154,154,154,1) 100%);
+    background: linear-gradient(90deg, rgba(210,210,210,1) 0%, rgba(208,208,208,1) 35%, rgba(154,154,154,1) 100%);
     border-top-left-radius: 110px; 
     border-top-right-radius: 110px; 
     border-bottom: 0;
     z-index: 100;
     transform: rotate(90deg);
 }
-
 
 .owl-carousel .owl-nav button.owl-next span, .owl-carousel .owl-nav button.owl-prev span, .owl-carousel button.owl-dot span{
     display: none;
@@ -291,24 +412,33 @@ background: linear-gradient(90deg, rgba(210,210,210,1) 0%, rgba(208,208,208,1) 3
     position: relative;
     content: '▼';
     color: white;
-  }
-
-  .owl-carousel .owl-nav button.owl-prev::after {
-    position: relative;
-    content: '▼';
-    color: white;
-  }
-
-  .nav-item .active{
-    color: #fdd547
 }
 
+.owl-carousel .owl-nav button.owl-prev::after {
+position: relative;
+content: '▼';
+color: white;
+}
+
+#maincarousel{
+    padding-right: 25%;
+    padding-left: 25%;
+    height: 217px;
+} 
+
+/*//////////////////////////////*/
+/*  Carousel Vehicle Animation  */
+/*/////////////////////////////*/
+
 .vehicle{
-    position: absolute;
-    bottom: -87%;
+    position: relative;
     right: 0%;  
     display: none;
     z-index: 300;
+}
+
+.vehiclecenter{
+    padding-top: 10vh;
 }
 
 .drive{
@@ -316,6 +446,17 @@ background: linear-gradient(90deg, rgba(210,210,210,1) 0%, rgba(208,208,208,1) 3
     animation-name: run;
     animation-duration: 2s;
 
+}
+
+.driveBack{
+    animation: forwards;
+    animation-name: runBack;
+    animation-duration: 2s;
+
+}
+
+.fliped{
+    transform: scaleX(-1);
 }
 
 @keyframes run {
@@ -329,4 +470,37 @@ background: linear-gradient(90deg, rgba(210,210,210,1) 0%, rgba(208,208,208,1) 3
       right: 0%;   
     }
   }
+
+
+  @keyframes runBack {
+    0% {
+      right: 0;
+    }
+    50% {
+      right: -50%;
+    }
+    100% {
+      right: 0%;   
+    }
+  }
+
+
+/*////////////*/
+/*   FOOTER   */
+/*////////////*/
+
+.footer > .container, .footer > .container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.footer {
+    height: 180px;
+    padding-top: 3%;
+}
+
+.not-set {
+    color: #c55;
+    font-style: italic;
+}
 

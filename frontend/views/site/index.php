@@ -32,7 +32,9 @@ $this->title = 'Home';
                 <?php echo Html::img('@web/images/truck.png', ['alt' => 'pic not found', 'width' => '270px', 'height' => '200px', 'class' => 'float-end me-3']) ?>
             </div>
         </div>
-        <?php echo \Yii::$app->view->renderFile('@app/views/site/carousel.php'); ?>
+    
         
     </div>
 </div>
+</div>
+<?php echo \Yii::$app->view->renderFile('@app/views/site/carousel.php'); ?>

@@ -31,7 +31,7 @@ AppAsset::register($this);
                 <?php echo \Yii::$app->view->renderFile('@app/views/site/navigation.php'); ?>
                 </header>
                 <!-- HR LINE -->
-                <hr style="height:10px;border:none;color:#fde747;background-color:#fde747;opacity:1;" />
+                <hr/>
                 <!-- MAIN CONTENT -->
                 <main role="main" class="flex-shrink-0">
                     <div class="container">

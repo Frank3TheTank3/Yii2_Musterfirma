@@ -32,7 +32,7 @@ class m221013_163752_languages_migration extends Migration
         Sie beneideten, dass es etwas Großes mit Arbeit und Schmerzen war, aber die Zufriedenheit des Heims.
         /
         Aber in der Tat werde ich sie anklagen und nur zwei Schmerzen und ich werde sie zurücknehmen.
-        Stet clita kasd gubergren, no sea takimata ist heilig.', 
+        Stet clita kasd* gubergren, no sea takimata ist heilig.', 
 
         'Let the pain itself be a burden, but they envied* 
         the nation nonumy for such a time that it was in some great toil and pain,*
@@ -43,17 +43,17 @@ class m221013_163752_languages_migration extends Migration
         They envied that it was something great with labor and pain, but the satisfaction of the home.
         /
         But indeed I will accuse them and just two pains and I will take them back.
-        Stet clita kasd gubergren, no sea takimata is holy.', 
+        Stet clita kasd* gubergren, no sea takimata is holy.', 
 
         'Deja que el dolor mismo sea una carga,*
         pero envidiaron a la nación nonumy por tanto tiempo que estuvo en grandes trabajos y dolores,*
         pero la terminación del patio. Pero en verdad los acusaré y solo dos dolores y los tomaré de vuelta.*
         Stet clita kasd gubergren, ningún mar takimata es sagrado.*
         El dolor en sí es muy importante, pero llevará mucho tiempo.*
-        Envidiaron que fuera algo grande con trabajo y dolor, pero la satisfacción del hogar.*
+        Envidiaron que fuera algo grande con trabajo y dolor, pero la satisfacción del hogar.
         /
         Pero en verdad los acusaré y solo dos dolores y los tomaré de vuelta.
-        Stet clita kasd gubergren, ningún mar takimata es sagrado.', 
+        Stet clita kasd* gubergren, ningún mar takimata es sagrado.', 
 
         'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam*
          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,*
@@ -63,7 +63,7 @@ class m221013_163752_languages_migration extends Migration
          tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
          /
          At vero eos et accusam et justo duo dolores et ea rebum. 
-         Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.'
+         Stet clita kasd* gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.'
 
         ];
 

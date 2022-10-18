@@ -66,8 +66,10 @@ for ($i=0; $i < count($carouselElements); $i++) {
 </div>
 
 <!-- CONTRUCTION VEHICLE ANIMATION IMAGE -->
-<div class="item-class px-2 py-5">
-    <?php echo Html::img('@web/images/vehicle.png', ['alt' => 'pic not found', 'width' => '100%', 'class' => 'vehicle']) ?>
+<div class="item-class px-2 vehiclecenter ">
+    <div class="px-2 pt-2 pb-1">
+        <?php echo Html::img('@web/images/vehicle.png', ['alt' => 'pic not found', 'width' => '100%', 'class' => 'vehicle', 'height' => '100%']) ?>
+    </div>
 </div> 
 
 <?php OwlCarouselWidget::end(); ?>
@@ -79,22 +81,47 @@ $script = <<< JS
 
 $(document).ready(function() {
     
+    let isFlipped = false;
+    let drivingDirection = 'drive';
 $('.owl-next').click(function(){
-    startVehicleAnimation();
+    
+    if(isFlipped)
+    { 
+        $('.vehicle').removeClass('fliped');
+        isFlipped = false;
+        startVehicleAnimation();
+    }
+    else
+    {
+        startVehicleAnimation();
+    }
     
 });
 
 $('.owl-prev').click(function(){
+   
+    $('.vehicle').addClass('fliped');
+    isFlipped = true;
     startVehicleAnimation();
 });
 
 function startVehicleAnimation(){
-    $('.vehicle').addClass('drive');
+
+    
+    if(!isFlipped)
+    {drivingDirection = 'drive'}
+    else
+    {drivingDirection = 'driveBack'}
+
+    $('.vehicle').addClass(drivingDirection);
+
     setTimeout(
   function() 
   {
-    $('.vehicle').removeClass('drive');
+    $('.vehicle').removeClass(drivingDirection);
   }, 2000);
+
+
 }
 
 });
