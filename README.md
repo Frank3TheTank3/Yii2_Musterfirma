@@ -1,8 +1,12 @@
 ***Yii2 Asignment README***
 
-**Coder**
-
-- Name: Francis Nicholls
+<p align="center">
+    <a href="https://www.francisnicholls.ch target="_blank">
+        <img src="https://francisnicholls.ch/assets/img/logofra.png" height="100px">
+    </a>
+    <h1 align="center">Made by Francis Nicholls</h1>
+    <br>
+</p>
 
 **Requirements**
 
