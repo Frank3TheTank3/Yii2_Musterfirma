@@ -125,9 +125,26 @@ function startVehicleAnimation(){
 }
 
 });
+
+var windowsize = $(window).width();
+
+$(window).resize(function() {
+  windowsize = $(window).width();
+  if (windowsize > 440) {
+    //if the window is greater than 440px wide then turn on jScrollPane..
+        $("#maincarousel").owlCarousel({
+        loop:true,
+        singleItem: true 
+    });
+  }
+});
+
+
+
 JS;
 
 $this->registerJs($script);
+
 
 
 ?>

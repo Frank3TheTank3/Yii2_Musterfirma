@@ -264,10 +264,10 @@ a.desc:after {
     .navbar-brand {
         font-weight: bolder;
         /*font-size: 18px;*/
-        font-size: 26px;
+        font-size: 28px;
         padding-bottom: 20px;
         padding-left: 34px;
-        font-family: 'HelveticaNw', sans-serif;
+        
         
     }
 
