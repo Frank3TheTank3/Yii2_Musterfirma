@@ -451,7 +451,7 @@ margin: 0;
     width: 50px;
     height: 28px;
     background: rgb(210,210,210);
-    background: linear-gradient(90deg, rgba(210,210,210,1) 0%, rgba(202, 190, 151, 0.8) 35%, rgba(139, 91, 69, 0.1) 100%);
+    background: linear-gradient(90deg, rgba(154,154,154,0.8) 0%, rgba(202, 190, 151, 0.5) 35%, rgba(158, 102, 76, 0.2) 100%);
     border-top-left-radius: 110px;
     border-top-right-radius: 110px;
     border-bottom: 0;
