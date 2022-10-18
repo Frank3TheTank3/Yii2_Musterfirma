@@ -20,7 +20,7 @@ $this->title = 'Example Backend Database';
 
                 <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt" might sound 
                     like a cool language but didn't you ever want to exchange it for something else? Well as an administrator
-                    you have the super user rights to do so!
+                    you have the super user rights to do so!  This is displayed in the first navigation bar menu.
                 </p>
 
                     <?php 
@@ -33,9 +33,8 @@ $this->title = 'Example Backend Database';
             <div class="col-lg-4">
                 <h2>Add new navigation</h2>
 
-                <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt" might sound 
-                    like a cool language but didn't you ever want to exchange it for something else? Well as an administrator
-                    you have the super user rights to do so!
+                <p>This is a great chance to review the products you have and to be thoughtful of you resources and
+                    give the customers the chance to see what they need. This is displayed in the second navigation bar menu.
                 </p>
 
                     <?php 
@@ -47,7 +46,7 @@ $this->title = 'Example Backend Database';
                 <h2>Add new carousel images</h2>
 
                 <p>Add cat images. Cats are construction cranes capabable of lifting many tons of dirt. Add pictures
-                    of holes or pictures of filled up holes. The possibilities are endless.
+                    of holes or pictures of filled up holes. The possibilities are endless. This is displayed in the carousel component.
                 </p>
 
                     <?php 
