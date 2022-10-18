@@ -458,7 +458,7 @@ margin: 0;
     bottom: 140px;
     z-index: 100;
     transform: rotate(-90deg);
-    float: inline-end;
+    float: right;
     opacity: 100%;
     
 }
