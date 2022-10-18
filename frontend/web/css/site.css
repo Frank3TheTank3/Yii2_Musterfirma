@@ -11,7 +11,7 @@
 }
 
 #w2 #btn-lang1 {
-    background-color: rgba(0, 0, 255, 0.10);
+    background-color: #E8EFF6;
     border-radius: 25px;
     padding: 0px 10px;
   }
@@ -160,18 +160,29 @@ a.desc:after {
         padding-left: -100px;
         margin-right: -6.8vw;
     }
-}
-
-@media(max-width:1100px) {
-    
     .col-lg-5 img{
         display: flex;
-        justify-content: center;
-        padding-bottom: 2%;
-        margin-left: 150px;
+        justify-self: center;
+        width: 320px;
+        height: 500px;
+       
+    }
+
+    .navbar-brand {
+        font-size: 8px;  
     }
     
+    .body{
+        width: 100%;
+    }
+
+    /* Body p text */
+    .col-lg-7 {
+        font-size: 9px;
+    }
 }
+
+
 @media(max-width:500px) {
     
     .owl-next{

@@ -29,7 +29,7 @@ $this->title = 'Home';
             </div>
             <div class="col-lg-5">
                 <!-- TRUCK IMAGE -->
-                <?php echo Html::img('@web/images/truck.png', ['alt' => 'pic not found', 'width' => '270px', 'height' => '200px', 'class' => 'float-end me-3']) ?>
+                <?php echo Html::img('@web/images/truck.png', ['alt' => 'pic not found', 'width' => '270px', 'height' => '200px', 'class' => 'me-3']) ?>
             </div>
         </div>
     
