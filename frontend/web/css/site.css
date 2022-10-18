@@ -29,6 +29,7 @@
     justify-content: flex-end;
     padding: 0;
     margin: 0;
+    margin-bottom: 10px;
 }  
 
 .navbar form > button.logout {

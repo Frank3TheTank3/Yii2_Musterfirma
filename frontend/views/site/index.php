@@ -7,7 +7,7 @@ $this->title = 'Home';
     <div class="body-content">
         <div class="row">
             <!-- HEADER 1 TITEL-->
-            <h1 class="fw-bold">Dies ist die Titelschrift!</h1>
+            <h1 class="fw-bold">Dies ist die Titelschrift</h1>
             <div class="col-lg-8 maincontent-right">
                 <!-- MAIN TEXT -->
                 <?php
